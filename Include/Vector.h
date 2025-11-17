@@ -12,8 +12,8 @@ struct Vector {
     int length = N;
 
     Vector() = default;
-    Vector(const T* otherData) {
-
+    explicit Vector(const T *otherData) {
+        memcpy(data, otherData, sizeof(T) * N);
     }
 };
 
