@@ -7,4 +7,4 @@ include_directories(Include)
 
 add_executable(CPlusPlus
         main.cpp
-        Include/Vector.h)
+)
